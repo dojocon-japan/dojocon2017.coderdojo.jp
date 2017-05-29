@@ -13,18 +13,20 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Frasco: Jekyll Starter Project"
-email: your-email@domain.com
-description: Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc.
+title: DojoCon Japan 2017 - つながる Dojo to Dojo -
+description: DojoCon Japanは日本のCoderDojo関係者（見守る大人、学ぶ子供）とその活動に賛同・協賛する人が全国各地から集まる大きなイベントです。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dojocon-japan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ixkaito
-github_username:  ixkaito
+url: https://dojocon-japan.github.io
+
+sponsorform_url: https://docs.google.com/forms/d/e/1FAIpQLSfL3xYPIzWNKMhaVIiuiXgAT87nli91wamru6RcuS1zosb6QQ/viewform
+contactform_url: https://docs.google.com/forms/d/e/1FAIpQLScqnV4pU-sCiXkrL3JzLjDdJ_GDBye0v91jH_w5-9giE31QdQ/viewform
+
+twitter:
+  id: DojoConJapan
+  hashtag: DojoConJP
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -35,3 +37,13 @@ exclude:
   - npm-debug.log
   - package.json
   - README.md
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  # ignore:
+  #   envs: [development]
+  # blanklines: true
+  # profile: true
+  startings: [html, head, body]
