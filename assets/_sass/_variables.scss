@@ -2,7 +2,7 @@
 $em-base: 10px;
 
 // Neat
-$max-width: 940px;
+$max-width: 1140px;
 $column: 60px;
 $gutter: 20px;
 
@@ -32,7 +32,7 @@ $font-size: 16;
 $line-height: 1.75;
 $line-height-px: $line-height * $font-size * 1px;
 
-$default-font-color: #4d4d4d;
+$default-font-color: #333333;
 
 $blue: #0a94b8;
 $yellow: #fff701;
@@ -47,11 +47,11 @@ $silver-dark: #aab2bd;
 $gray: #656d78;
 $gray-dark: #434a54;
 
-$code-font-color: #f8f8f2;
-$code-bg-color: #282822;
 
 $facebook_brand_color: #4963a1;
 $twitter_brand_color: #58abe8;
-$line_brand_color: #25bd62;
 
-$timetable-5min-height: 30px;
+
+$_color-main: #d10000;
+$_color-menu-bg: rgba(255,255,255,.8);
+$_color-gray: #eaeaea;

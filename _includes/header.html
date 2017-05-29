@@ -60,21 +60,23 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <header class="header">
-  <button type="button" class="icon-bar menu-trigger js-menu-trigger"></button>
+  <button type="button" class="menu-trigger js-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></button>
   <div class="menu js-menu">
     <div class="menu-close-outer">
-      <button type="button" class="menu-close js-menu-close icon-close"></button>
+      <button type="button" class="menu-close js-menu-close"><i class="fa fa-times" aria-hidden="true"></i></button>
     </div>
-    <nav class="nav">
+    <nav class="nav container">
       <ul><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}{% if is_home %}#pagetop{% endif %}">HOME</a></li><!--
-       --><li><a href="{{ '/' | prepend: site.baseurl }}#news" class="child-menu-trigger js-child-menu-trigger" data-icon="＋">NEWS</a>
+       --><li><a href="{{ '/' | prepend: site.baseurl }}#news" class="child-menu-trigger js-child-menu-trigger">NEWS</a>
           </li><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}#sponsor">SPONSOR</a></li><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}#staff">STAFF</a></li><!--
-       --><li><a href="{{ '/' | prepend: site.baseurl }}#contact">CONTACT</a></li>
+       --><li><a href="{{ '/' | prepend: site.baseurl }}#contact">CONTACT</a></li><!--
+       --><li></li>
       </ul>
     </nav>
   </div>
-  <div class="menu-screen js-menu-screen"></div>
+<!--     <div class="menu-screen js-menu-screen"></div> -->
+  </div>
 </header>
