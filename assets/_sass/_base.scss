@@ -18,6 +18,7 @@ a{
 
 .container {
   @include outer-container;
+  padding: 0 20px;
 }
 
 .button {
@@ -37,7 +38,7 @@ a{
   &:hover,
   &:active {
     text-decoration: none;
-    color: $_color-main;
+    color: rgba($_color-main,.8);
     border-color: rgba($_color-main,.8);
     box-shadow: 0 0 4px rgba($_color-main,.5);
   }
@@ -47,5 +48,22 @@ a{
   display: block;
   @include media($s-screen) {
     display: none;
+  }
+}
+
+.main{
+  font-family: $main-fontfamily;
+  h2{
+    margin-top: 65px;
+    margin-bottom: 35px;
+    font-size: 28px;
+    color: $_color-main;
+    text-align: center;
+    // font-weight: $bold;
+    span{
+      border-bottom: 2px solid $_color-main;
+      padding-top: 3px;
+      padding-bottom: 1px;
+    }
   }
 }

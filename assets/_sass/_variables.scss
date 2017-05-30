@@ -2,9 +2,10 @@
 $em-base: 10px;
 
 // Neat
-$max-width: 1140px;
+$max-width: 1180px;
+$max-width-news: 800px;
 $column: 60px;
-$gutter: 20px;
+$gutter: 60px;
 
 // Screen size
 $xl-screen: 1440px;
@@ -19,6 +20,8 @@ $hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリ�
 $noto: "Noto Sans CJK JP", $hiragino;
 $oswald: "Oswald", sans-serif;
 $inconsolata: "Inconsolata", monospace;
+
+$main-fontfamily: "Oswald","Noto Sans CJK JP", $hiragino;
 
 $thin: 100;
 $light: 200;
@@ -54,4 +57,4 @@ $twitter_brand_color: #58abe8;
 
 $_color-main: #d10000;
 $_color-menu-bg: rgba(255,255,255,.8);
-$_color-gray: #eaeaea;
+$_color-gray: #f3f3f3;

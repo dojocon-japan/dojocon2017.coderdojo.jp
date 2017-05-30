@@ -1,32 +1,55 @@
 ---
 layout: default
 ---
+<main class="main">
+  <section class="about" id="about">
+    <div class="container">
+      <h2><span>日本最大のCoderDojoの祭典</span></h2>
+      <p class="about-p">DojoCon Japanは日本のCoderDojo関係者（見守る大人、学ぶ子供）とその活動に賛同・協賛する人が全国各地から集まる大きなイベントです。</p>
+      <p class="about-p">CoderDojoは2011年にアイルランドから始まった子供達にプログラミングを学ぶ場を提供するボランティア主導の世界的な非営利活動です。その数は世界中で1241（2017年4月現在）にも及びます。<br>昨年初めてDojoCon Japanを開催したとき、日本には36の道場しかありませんでした。しかし、開催後にはその数を飛躍的に伸ばし、現在では82の道場が日本で活動しています(2017年5月現在)。</p>
 
-<!--
-昨年の写真を見る
-昨年の動画を見る
+      <h2><span>開催にあたって</span></h2>
+      <p class="about-p">今回は、「つながる～Dojo to Dojo～」をテーマに、全国のCoderDojo関係者が集まることで交流や意見交換を行ったり、一生付き合える仲間づくりをすることで、日本のCoderDojoコミュニティの絆を強めることを目的に開催します。<br>DojoCon Japanに参加してもらうことで、「CoderDojo」という同じ活動をしているのに、他のDojoのことを余り知らないという課題を解決し、相互理解を深めることでそこから新しい何かが生まれることを期待しています。<br>また、これまでCoderDojoを知らなかった方にもこの機会に知っていただき、地元のDojoに参加したり、新しくDojoを立ち上げるきっかけになってほしいと願っています。</p>
 
+    　<hr class="about-hr">
+      <p class="about-p">CoderDojoを運営する私達は自分たちだけでは解決できない悩みや疑問をネット上で相談しています。ネット上のやり取りだけでは十分な意思疎通ができないこともあり、歯がゆい思いをすることもしばしばあります。DojoConをきっかけに、実際に顔を合わせて話すことで、文字に収まらない様々な思いを共有し、その後のやり取りが円滑になるんじゃないかと思っています。</p>
+    　<hr class="about-hr">
 
-News
+      <p class="about-p">常連の子供たちが増え、新しい刺激が減ったため発表する作品も段々パターン化してきたという悩みを抱える道場があります。このままでは井の中の蛙になってしまうと私たちが心配する子供もいます。<br>そんな子供にも、是非このDojoConで他のDojoの子供たちと交流してもらい、「他のDojoにはすごいヤツがいる！来年はあいつより出来るようになってやる！」と良い意味でのライバルを見つけて欲しいと考えています。<br>誰かに教えてもらってレベルアップするのではなく、自分の意志で向上していくことがCoderDojoの良いところだと私たちは考えています。</p>
+    　<hr class="about-hr">
+      <p class="about-p">CoderDojoコミュニティでは、非営利活動ならではの課題や悩みがあります。参加費用を頂かないというルールもその一つです。しかし、世界に1,000を超えるDojoがあり、現役のエンジニアに直接質問ができ、子供たちのとびきりの笑顔に出会えるなど、課題や悩みを乗り越える良さもたくさん持っています。皆さんには是非DojoCon Japanにお越しいただき、実感して頂きたいです。それでは11月4日、会場でお待ちしています。</p>
+      <div class="about-buttonarea">
+        <div class="col">
+          <a href="https://www.flickr.com/photos/dojoconjapan2016/" target="_blank" class="about-button"><i class="fa fa-camera-retro" aria-hidden="true"></i>昨年の写真を見る</a>
+        </div>
+        <div class="col">
+          <a href="https://www.youtube.com/watch?v=16lvmFgqslQ" target="_blank" class="about-button"><i class="fa fa-video-camera" aria-hidden="true"></i>昨年の動画を見る</a>
+        </div>
+      </div>
 
+    </div>
+  </section>
 
-<h1 class="page-heading">Posts</h1>
+  <section class="news" id="news">
+    <div class="news-inner">
+      <h2><span>NEWS</span></h2>
+      <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%Y.%m.%d" }}</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </li>
+      {% endfor %}
+        <li>
+          <span class="post-meta">2017.06.09</span>
+          <a class="post-link" href="{{ post.url | relative_url }}">え、新しい刺激が減ったため発表する作品も段々パターン化してきたという悩みを抱える道場があります。このままでは井の中の蛙になってしまうと私たちが心配する子供もいます。<br>そんな子供にも、是非このDojoConで他のDojoの子供たちと交流してもらい、「他のDojoにはすごいヤツがいる！来年はあいつより出来るようになってやる！」と良い意味でのライバ</a>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-<ul class="post-list">
-{% for post in site.posts %}
-  <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-    <h2>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    </h2>
-  </li>
-{% endfor %}
-</ul>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-FOLLOW US
+<section class="sns" id="sns">
+<h2><span>FOLLOW US</span></h2>
 <ul class="fb-tw-widgets">
 	<li class="fb-page-plugin">
 		<div class="fb-page" data-href="https://www.facebook.com/DojoConJapan" data-tabs="timeline" data-width="640" data-height="320" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
@@ -42,8 +65,11 @@ FOLLOW US
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</li>
 </ul>
+</section>
 
-SPONSOR
+<section class="sponsor" id="sponsor">
+<h2><span>SPONSOR</span></h2>
+
 DojoCon Japan 2017では、開催にあたってDojoCon Japanの趣旨に賛同いただき、ご支援くださるスポンサーを募集しています。
 詳しくは、下記のリンク先をご覧ください。
 DojoCon Japan 2017 スポンサーシップのご案内
@@ -53,5 +79,10 @@ GOLD
 SILVER
 
 BRONZE
+</section>
 
-STAFF -->
+<section class="staff" id="staff">
+<h2><span>STAFF</span></h2>
+
+
+</main>
