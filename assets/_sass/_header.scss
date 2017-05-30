@@ -113,7 +113,6 @@
             background: none;
             padding-right: 20px;
             padding-left: 20px;
-            opacity: .7;
           }
           &:active,
           &:focus,
@@ -162,148 +161,40 @@
       z-index: 2000;
     }
   } // .menu
-
-  .hero {
-    width: 100%;
-    height: 100vh;
-    max-height: 800px;
-    background: url(../images/hero_bg.png) center center;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-
-    a{
-      color: #fff;
-    }
-    @include pad(20px 0 0);
-    @include media($s-screen) {
-      padding-top: 130px;
-    }
-    .hero-inner {
-      background-color: rgba($_color-main,.5);
-      box-shadow: 0 0 6px rgba(#4b0000, .6);
-      @include pad(30px 10px 20px);
-      width: 95%;
-      @include media($xxs-screen) {
-        width: 80%;
-      }
-      @include media($s-screen) {
-        @include pad(54px 10px 35px);
-        width: 650px;
-        min-height: 420px;
-      }
-    }
-
-    .coderdojo-logo {
-      margin-bottom: 40px;
-      img{
-        width: 120px;
-        height: auto;
-        @include media(min-width $s-screen) {
-          width: 170px;
-        }
-      }
-    }
-
-    .dojocon-logo {
-      margin-bottom: 24px;
-      font-family: $oswald;
-      font-weight: 700;
-      line-height: 1;
-      font-size: 32px;
-      a{
-        &:hover{
-          text-decoration: none;
-        }
-
-      }
-      @include media($s-screen) {
-        font-size: 52px;
-      }
-    }
-
-    .dojocon-copy {
-      padding: 13px;
-      border: 1px solid #fff;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 50px;
-      line-height: 1;
-      font-family: $oswald;
-      font-size: 20px;
-
-      @include media($s-screen) {
-        font-size: 28px;
-      }
-    }
-    .dojocon-date {
-      margin-bottom: 20px;
-      .date{
-        vertical-align: middle;
-        font-weight: bold;
-        font-size: 28px;
-        font-family: $oswald;
-
-        @include media($s-screen) {
-          font-size: 40px;
-        }
-      }
-      .weekday{
-        vertical-align: middle;
-        font-family: $noto;
-        font-weight: $regular;
-        font-size: 20px;
-
-        @include media($s-screen) {
-          font-size: 30px;
-        }
-      }
-    }
-    .dojocon-info {
-      font-size: 18px;
-      line-height: 1.4;
-      @include media($s-screen) {
-        font-size: 24px;
-      }
-      .address{
-        font-size: 14px;
-        @include media($s-screen) {
-          font-size: 16px;
-        }
-      }
-    }
-
-    .teaser-action {
-      @include pad(0 15px);
-      margin-top: 36px;
-      @include media($s-screen) {
-        margin-top: 48px;
-      }
-      > li {
-        margin-bottom: $gutter / 2;
-        text-align: center;
-
-        a {
-          display: inline-block;
-          color: #fff;
-          text-align: center;
-          font-family: $noto;
-          font-weight: $bold;
-          font-size: 20px;
-          text-shadow: 0 0 6px rgba(#000, .6);
-          @include media($s-screen) {
-            font-size: 28px;
-          }
-          &:hover{
-            text-decoration: none;
-            color: rgba( 255,255,255,.8);
-          }
-        }
+} // .header
+.section-header{
+  background-color: $_color-gray;
+  padding: 20px 0;
+  text-align: center;
+  @include media($s-screen) {
+    padding: 84px 0 30px;
+  }
+  .coderdojo-logo {
+    margin-bottom: 40px;
+    img{
+      width: 120px;
+      height: auto;
+      @include media(min-width $s-screen) {
+        width: 170px;
       }
     }
   }
-} // .header
+
+  .dojocon-logo {
+    font-family: $oswald;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 20px;
+    a{
+      color: $_color-main;
+      &:hover{
+        color: rgba($_color-main,.8);
+        text-decoration: none;
+      }
+
+    }
+    @include media($s-screen) {
+      font-size: 32px;
+    }
+  }
+}

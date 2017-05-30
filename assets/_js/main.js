@@ -36,7 +36,7 @@ $(function(){
   /**
    * hero
    */
-   var $logo = $('.js-dojocon-logo');
+  var $logo = $('.js-dojocon-logo');
   if( $logo.length ) {
     $(window).on('load resize',function() {
       var logoWidth = $logo.width();

@@ -4,8 +4,16 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <p class="post-cat"><span>News</span></p>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d" }}</time></p>
+    {% if page.thumbnail %}
+      <p class="post-thumbnail"><img src="{{ page.thumbnail }}" alt="{{ page.title }}"></p>
+    {% endif %}
   </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
 
 </article>
