@@ -1,0 +1,48 @@
+.footer{
+  font-family: $noto;
+  .share-links {
+    @include clearfix;
+    text-align: center;
+    > li {
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 70px 30px 40px;
+      a {
+        font-size: 50px;
+
+      }
+      @include media($xxs-screen) {
+      }
+      &.facebook {
+        > a {
+          color: $facebook_brand_color;
+          &:hover {
+            color: rgba($facebook_brand_color,.8);
+          }
+        }
+      }
+      &.twitter {
+        > a {
+          color: $twitter_brand_color;
+          &:hover {
+            color: rgba($twitter_brand_color,.8);
+          }
+        }
+      }
+    }
+  }
+  .attention-text{
+    font-size: 12px;
+    margin: 20px;
+    line-height: $line-height;
+    margin-bottom: 70px;
+  }
+
+  .copyright{
+    background-color: $_color-main;
+    padding: 17px;
+    text-align: center;
+    color: #fff;
+    line-height: 1em;
+  }
+}

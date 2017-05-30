@@ -1,5 +1,21 @@
 @charset "UTF-8";
+@import "bootstrap";
 @import "bourbon/bourbon";
 @import "neat/neat";
-// @import "base/base";
-@import "minima";
+@import "fonts";
+@import "reset";
+@import "font-awesome";
+@import "base";
+@import "header";
+@import "hero";
+@import "about";
+@import "news";
+@import "sns";
+@import "sponsor";
+@import "staff";
+@import "footer";
+@import "post";
+@import "page";
+// @import "components";
+// @import "common";
+

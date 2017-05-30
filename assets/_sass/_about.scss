@@ -1,0 +1,50 @@
+.section-about{
+  h2{
+    text-transform: capitalize;
+  }
+  .about-hr{
+    margin: 40px auto;
+    width: 40px;
+    border: 2px solid $_color-gray;
+  }
+  .about-buttonarea{
+    @include outer-container;
+    text-align: center;
+    margin-top: 63px;
+    margin-bottom: 70px;
+    .col{
+      margin-bottom: 20px;
+      @include media($s-screen) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+    }
+  }
+  .about-button{
+    border: 4px solid $_color-main;
+    color: $_color-main;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1em;
+    padding: 17px;
+    text-align: center;
+    text-decoration: none;
+    @include media($s-screen) {
+      font-size: 28px;
+    }
+    i{
+      display: inline-block;
+      padding-right: 17px;
+    }
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: rgba($_color-main,.8);
+      border-color: rgba($_color-main,.8);
+      box-shadow: 0 0 4px rgba($_color-main,.5);
+    }
+  }
+}
+

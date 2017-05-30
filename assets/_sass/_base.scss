@@ -1,0 +1,92 @@
+body{
+  font-size: 16px;
+  margin: 0;
+  color: $default-font-color;
+}
+
+a{
+  color: $_color-main;
+}
+
+.noto {
+  font-family: $noto;
+}
+
+.oswald {
+  font-family: $oswald;
+}
+
+.container {
+  @include outer-container;
+  padding: 0 20px;
+}
+
+.button {
+  border: 4px solid $_color-main;
+  color: $_color-main;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1em;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  @include media($s-screen) {
+    padding: 15px 40px;
+  }
+  i{
+    display: inline-block;
+    padding-left: 10px;
+  }
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: rgba($_color-main,.8);
+    border-color: rgba($_color-main,.8);
+    box-shadow: 0 0 4px rgba($_color-main,.5);
+  }
+}
+
+.text-center{
+  text-align: center;
+}
+
+.img-responsive{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.hidden-pc{
+  display: block;
+  @include media($s-screen) {
+    display: none;
+  }
+}
+
+.main{
+  font-family: $main-fontfamily;
+  h2{
+    margin-top: 65px;
+    margin-bottom: 45px;
+    font-size: 28px;
+    color: $_color-main;
+    text-align: center;
+    line-height: 1.625;
+    text-transform: uppercase;
+    span{
+      border-bottom: 4px solid $_color-main;
+      padding-top: 3px;
+      padding-bottom: 1px;
+    }
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+}

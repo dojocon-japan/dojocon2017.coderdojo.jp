@@ -1,0 +1,62 @@
+// Bourbon
+$em-base: 10px;
+
+// Neat
+$max-width: 1180px;
+$max-width-news: 800px;
+$column: 60px;
+$gutter: 60px;
+
+// Screen size
+$xl-screen: 1440px;
+$l-screen: 1280px;
+$m-screen: 960px;
+$s-screen: 768px;
+$xs-screen: 640px;
+$xxs-screen: 480px;
+
+$news-screen: 800px;
+
+// DojoCon
+$hiragino: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$noto: "Noto Sans CJK JP", $hiragino;
+$oswald: "Oswald", sans-serif;
+$inconsolata: "Inconsolata", monospace;
+
+$main-fontfamily: "Oswald","Noto Sans CJK JP", $hiragino;
+
+$thin: 100;
+$light: 200;
+$demilight: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+$font-size: 16;
+$line-height: 1.75;
+$line-height-px: $line-height * $font-size * 1px;
+
+$default-font-color: #333333;
+
+$blue: #0a94b8;
+$yellow: #fff701;
+
+// $clouds: #f5f7fa;
+$clouds: #f3f3f3;
+$clouds-dark: #e6e9ed;
+
+$silver: #ccd1d9;
+$silver-dark: #aab2bd;
+
+$gray: #656d78;
+$gray-dark: #434a54;
+
+
+$facebook_brand_color: #4963a1;
+$twitter_brand_color: #58abe8;
+
+
+$_color-main: #d10000;
+$_color-menu-bg: rgba(255,255,255,.8);
+$_color-gray: #f3f3f3;
