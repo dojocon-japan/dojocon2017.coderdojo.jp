@@ -11,6 +11,7 @@
     border: $_color-gray 1px solid;
     border-right-color: transparent;
     cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 
     @include media($s-screen) {
       top: 70px;
@@ -76,6 +77,10 @@
     }
 
     .nav {
+      @include media($s-screen) {
+        @include outer-container;
+        padding: 0 20px;
+      }
       > ul {
         @include clearfix;
         list-style: none;

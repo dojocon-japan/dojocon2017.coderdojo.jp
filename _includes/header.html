@@ -65,17 +65,18 @@
     <div class="menu-close-outer">
       <button type="button" class="menu-close js-menu-close"><i class="fa fa-times" aria-hidden="true"></i></button>
     </div>
-    <nav class="nav container">
+    <nav class="nav">
       <ul><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}{% if is_home %}#pagetop{% endif %}">HOME</a></li><!--
-       --><li><a href="{{ '/' | prepend: site.baseurl }}#news" class="child-menu-trigger js-child-menu-trigger">NEWS</a>
+       --><li><a href="{{ '/' | prepend: site.baseurl }}#news">NEWS</a>
           </li><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}#sponsor">SPONSOR</a></li><!--
        --><li><a href="{{ '/' | prepend: site.baseurl }}#staff">STAFF</a></li><!--
-       --><li><a href="{{ '/' | prepend: site.baseurl }}#contact">CONTACT</a></li><!--
+       --><li><a href="{{ '/' | prepend: site.baseurl }}contact">CONTACT</a></li><!--
        --><li></li>
       </ul>
     </nav>
+    <div class="menu-screen js-menu-screen"></div>
   </div>
   <div class="hero">
     <div class="hero-inner">

@@ -35,10 +35,8 @@
         }
       }
       a{
-        .member-name{
-          color: $default-font-color;
-          text-decoration: underline;
-        }
+        text-decoration: underline;
+        color: $default-font-color;
         &:hover{
           color: $default-font-color;
           text-decoration: none;

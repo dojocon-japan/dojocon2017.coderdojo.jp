@@ -1,5 +1,8 @@
 'use strict';
 var $ = require("jquery");
+var scrollsmoothly = require('./scrollsmoothly.js');
+var xlScreen = 768;
+
 $(function(){
   /**
    * Global menu on mobiles and tablets
@@ -9,15 +12,10 @@ $(function(){
     e.preventDefault();
   });
 
-  /**
-   * Child menu in the global menu
-   */
-  var icon;
-  $('.js-child-menu-trigger').attr('href', '').on('click', function (e) {
-    icon = $(this).attr('data-icon');
-    $(this).attr('data-icon', icon == '＋' ? '−' : '＋');
-    $(this).siblings('.js-child-menu').toggleClass('active');
-    e.preventDefault();
+  $('.js-menu .nav a:not(.js-child-menu-trigger)').on('click', function () {
+    if ($(window).width() < xlScreen) {
+      $('.js-menu, .js-menu-screen').toggleClass('is-visible');
+    }
   });
 
   /**
