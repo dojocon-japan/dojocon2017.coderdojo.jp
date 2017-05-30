@@ -1,9 +1,9 @@
-.news{
+.section-news{
   padding-top: 1px;
   padding-bottom: 50px;
   background-color: $_color-gray;
   line-height: 1.625;
-  &-inner{
+  .news-inner{
     @include outer-container;
     padding: 0 20px;
     max-width: $max-width-news;
@@ -14,6 +14,8 @@
       @include clearfix;
       .post-meta{
         display: block;
+        margin-top: 0;
+        padding-top: 0;
         margin-bottom: 5px;
         @include media($s-screen) {
           width: 120px;

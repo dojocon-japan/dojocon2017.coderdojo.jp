@@ -1,0 +1,24 @@
+.section-sns{
+  margin-bottom: 50px;
+  .fb-tw-widgets {
+    @include outer-container;
+    max-width: $m-screen;
+    padding: 0 20px;
+    text-align: center;
+    > li {
+      margin-bottom: 20px;
+      display: inline-block;
+      vertical-align: top;
+      width: 100%;
+      overflow: hidden;
+
+      @include media($s-screen) {
+        @include span-columns(6);
+        @include omega(2n);
+      }
+      &.tw-widget {
+        border: 1px solid #e2e9ec;
+      }
+    }
+  }
+}

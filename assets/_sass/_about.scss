@@ -1,14 +1,13 @@
-.about{
-  &-p{
-    margin-bottom: 20px;
-    line-height: 2;
+.section-about{
+  h2{
+    text-transform: capitalize;
   }
-  &-hr{
-    margin: 50px auto;
+  .about-hr{
+    margin: 40px auto;
     width: 40px;
     border: 2px solid $_color-gray;
   }
-  &-buttonarea{
+  .about-buttonarea{
     @include outer-container;
     text-align: center;
     margin-top: 63px;
@@ -21,7 +20,7 @@
       }
     }
   }
-  &-button{
+  .about-button{
     border: 4px solid $_color-main;
     color: $_color-main;
     cursor: pointer;
@@ -47,19 +46,5 @@
       box-shadow: 0 0 4px rgba($_color-main,.5);
     }
   }
-
 }
 
-  .fb-tw-widgets {
-    @include outer-container;
-    text-align: center;
-
-    > li {
-      margin-bottom: 20px;
-
-      @include media($s-screen) {
-        @include span-columns(6);
-        @include omega(2n);
-      }
-    }
-  }

@@ -1,0 +1,52 @@
+.section-staff{
+  padding-top: 1px;
+  padding-bottom: 50px;
+  background-color: $_color-gray;
+  .staff-members{
+    >li{;
+      float: left;
+      display: block;
+      width: 50%;
+      margin-bottom: 35px;
+      padding-left: 5px;
+      padding-right: 5px;
+      text-align: center;
+      @include media($xxs-screen) {
+        width: 25%;
+      }
+      @include media($s-screen) {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 16.666666%;
+      }
+      @include media($m-screen) {
+        width: 12.5%;
+      }
+      img{
+        display: block;
+        margin-bottom: 15px;
+        max-width: 100px;
+        height: auto;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        @include media($xs-screen) {
+          max-width: 100px;
+        }
+      }
+      a{
+        .member-name{
+          color: $default-font-color;
+          text-decoration: underline;
+        }
+        &:hover{
+          color: $default-font-color;
+          text-decoration: none;
+          img{
+            opacity: .8;
+          }
+        }
+      }
+    }
+  }
+}
