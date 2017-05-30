@@ -40,6 +40,7 @@
       transform: translateY(0);
       transition: all .1s linear;
       background-color: $_color-menu-bg;
+      box-shadow: 0 0 10px rgba(#000, .2);
     }
 
     &.is-visible {
@@ -110,7 +111,8 @@
             padding-left: 20px;
             opacity: .7;
           }
-
+          &:active,
+          &:focus,
           &:hover {
             color: rgba($_color-main,.8);
             text-decoration: none;
@@ -154,28 +156,6 @@
     }
     &.scrolled {
       z-index: 2000;
-
-      @include media($s-screen) {
-        background: $clouds;
-        box-shadow: 0 0 10px rgba(#000, .2);
-      }
-
-      .nav {
-
-        > ul {
-
-          @include media($s-screen) {
-            color: $default-font-color;
-          }
-        }
-      }
-
-      .entry {
-
-        @include media($s-screen) {
-          display: block;
-        }
-      }
     }
   } // .menu
 } // .header
