@@ -1,7 +1,6 @@
 body{
   font-size: 16px;
   margin: 0;
-  padding: 100px 0 0;
   color: $default-font-color;
 }
 
@@ -41,5 +40,12 @@ a{
     color: $_color-main;
     border-color: rgba($_color-main,.8);
     box-shadow: 0 0 4px rgba($_color-main,.5);
+  }
+}
+
+.hidden-pc{
+  display: block;
+  @include media($s-screen) {
+    display: none;
   }
 }

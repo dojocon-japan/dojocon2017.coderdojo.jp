@@ -34,4 +34,15 @@ $(function(){
       }
     }, 100);
   });
+
+  /**
+   * hero
+   */
+   var $logo = $('.js-dojocon-logo');
+  if( $logo.length ) {
+    $(window).on('load resize',function() {
+      var logoWidth = $logo.width();
+      $('.js-dojocon-copy').css('width',logoWidth + 'px');
+    });
+  }
 });
