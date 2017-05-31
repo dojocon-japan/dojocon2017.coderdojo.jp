@@ -3,7 +3,7 @@
     width: 100%;
     height: 100vh;
     max-height: 800px;
-    background: url(../images/hero_bg.png) center center;
+    background: $_color-gray url(../images/hero_bg.png) center center;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -64,14 +64,18 @@
 
     .dojocon-copy {
       padding: 13px;
-      border: 1px solid #fff;
+      border: 1px solid transparent;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 50px;
       line-height: 1;
       font-family: $oswald;
       font-size: 20px;
-
+      transition-property: border-color;
+      transition-duration: .1s;
+      &.is-border-white{
+        border-color: #fff;
+      }
       @include media($s-screen) {
         font-size: 28px;
       }
