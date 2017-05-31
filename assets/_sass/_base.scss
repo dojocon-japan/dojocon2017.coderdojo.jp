@@ -39,7 +39,8 @@ a{
     padding-left: 10px;
   }
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     text-decoration: none;
     color: rgba($_color-main,.8);
     border-color: rgba($_color-main,.8);

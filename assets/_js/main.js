@@ -1,5 +1,5 @@
 'use strict';
-var $ = require("jquery");
+var $ = require('jquery');
 var scrollsmoothly = require('./scrollsmoothly.js');
 var xlScreen = 768;
 
@@ -36,11 +36,12 @@ $(function(){
   /**
    * hero
    */
+
   var $logo = $('.js-dojocon-logo');
   if( $logo.length ) {
     $(window).on('load resize',function() {
       var logoWidth = $logo.width();
-      $('.js-dojocon-copy').css('width',logoWidth + 'px');
+      $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white');
     });
   }
 });
