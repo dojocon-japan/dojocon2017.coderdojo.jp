@@ -2,6 +2,8 @@
   .menu-trigger {
     @include position(fixed, 30px 0 auto auto);
     @include size(40px);
+    padding: 0;
+    text-align: center;
     background: #fff;
     border-radius: 0;
     color: $default-font-color;
@@ -102,7 +104,7 @@
         a {
           display: block;
           background: #fff;
-          padding: 7px 1em;
+          padding: 13px 1em;
           color: $_color-main;
 
           @include media($s-screen) {
