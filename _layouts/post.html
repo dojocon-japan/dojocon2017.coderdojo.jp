@@ -8,7 +8,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d" }}</time></p>
     {% if page.thumbnail %}
-      <p class="post-thumbnail"><img src="{{ page.thumbnail }}" alt="{{ page.title }}"></p>
+      <p class="post-thumbnail"><img src="{{ page.thumbnail | prepend: site.baseurl }}" alt="{{ page.title }}"></p>
     {% endif %}
   </header>
 
