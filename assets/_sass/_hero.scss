@@ -106,6 +106,7 @@
     .dojocon-info {
       font-size: 18px;
       line-height: 1.4;
+      font-family: $noto;
       @include media($s-screen) {
         font-size: 24px;
       }
