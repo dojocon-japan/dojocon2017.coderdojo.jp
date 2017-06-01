@@ -14,6 +14,12 @@
 
     a{
       color: #fff;
+      &:hover,
+      &:focus,
+      &:active{
+        color: rgba(255,255,255,.8);
+        text-decoration: none;
+      }
     }
     @include pad(20px 0 0);
     @include media($s-screen) {
@@ -52,7 +58,9 @@
       line-height: 1;
       font-size: 32px;
       a{
-        &:hover{
+        &:hover,
+        &:focus,
+        &:active{
           text-decoration: none;
         }
 
@@ -139,7 +147,9 @@
           @include media($s-screen) {
             font-size: 28px;
           }
-          &:hover{
+          &:hover,
+          &:focus,
+          &:active{
             text-decoration: none;
             color: rgba( 255,255,255,.8);
           }

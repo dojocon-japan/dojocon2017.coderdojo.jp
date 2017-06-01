@@ -189,7 +189,9 @@
     font-size: 20px;
     a{
       color: $_color-main;
-      &:hover{
+      &:hover,
+      &:focus,
+      &:active{
         color: rgba($_color-main,.8);
         text-decoration: none;
       }
