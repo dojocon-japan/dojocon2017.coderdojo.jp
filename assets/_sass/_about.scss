@@ -21,14 +21,14 @@
     }
   }
   .about-button{
-    border: 4px solid $_color-main;
-    color: $_color-main;
-    cursor: pointer;
     display: block;
+    padding: 17px 21px;
+    background-color: $_color-main;
+    color: #fff;
+    cursor: pointer;
     width: 100%;
     font-size: 20px;
-    line-height: 1em;
-    padding: 17px;
+    line-height: 1.4;
     text-align: center;
     text-decoration: none;
     @include media($s-screen) {
@@ -39,11 +39,11 @@
       padding-right: 17px;
     }
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       text-decoration: none;
-      color: rgba($_color-main,.8);
-      border-color: rgba($_color-main,.8);
-      box-shadow: 0 0 4px rgba($_color-main,.5);
+      color: #fff;
+      background-color: rgba($_color-main,.8);
     }
   }
 }

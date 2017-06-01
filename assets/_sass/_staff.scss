@@ -11,15 +11,15 @@
       padding-left: 5px;
       padding-right: 5px;
       text-align: center;
-      @include media($xxs-screen) {
+      @include media($xs-screen) {
         width: 25%;
       }
-      @include media($s-screen) {
+      @include media($m-screen) {
         padding-left: 10px;
         padding-right: 10px;
         width: 16.666666%;
       }
-      @include media($m-screen) {
+      @include media($max-width) {
         width: 12.5%;
       }
       img{

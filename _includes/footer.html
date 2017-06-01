@@ -1,15 +1,27 @@
 <footer class="footer">
   <div class="site-share">
-    <ul class="share-links icon-share">
-      <li class="facebook"><a href="https://www.facebook.com/sharer.php?u={{ '/' | prepend: site.url }}" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-      <li class="twitter"><a href="https://twitter.com/share?url={{ '/' | prepend: site.url }}&text={{ site.title }}&hashtags={{ site.twitter.hashtag }}&
-        via={{ site.twitter.id }}" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+    <ul class="share-links">
+      <li class="facebook"><a href="https://www.facebook.com/sharer.php?u={{ '/' | prepend: site.url }}" target="_blank"><img src="{{ '/assets/images/ico-fb-white.svg' | prepend: site.baseurl }}" alt="">Facebookでシェア</a></li><!--
+      --><li class="twitter"><a href="https://twitter.com/share?url={{ '/' | prepend: site.url }}&text={{ site.title }}&hashtags={{ site.twitter.hashtag }}&
+        via={{ site.twitter.id }}" target="_blank"><img src="{{ '/assets/images/ico-twitter-white.svg' | prepend: site.baseurl }}" alt="">Twitterでシェア</a></li>
     </ul>
   </div>
   <div class="text-center">
     <a href="{{ '/' | prepend: site.baseurl }}contact" class="button">お問い合わせ<i class="fa fa-angle-right" aria-hidden="true"></i></a>
   </div>
-  <p class="copyright">&copy; DojoCon Japan 2017 実行委員会</p>
+  <div class="footer-copyrightarea">
+    <div class="container">
+      <div class="sns-links">
+        <ul>
+          <li class="facebook"><a href="https://www.facebook.com/dojoconjapan" target="_blank"><img src="{{ '/assets/images/ico-fb.svg' | prepend: site.baseurl }}" alt="Facebook"></a></li><!--
+          --><li class="twitter"><a href="https://twitter.com/DojoConJapan" target="_blank"><img src="{{ '/assets/images/ico-twitter.svg' | prepend: site.baseurl }}" alt="Twitter"></a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; DojoCon Japan 2017 実行委員会</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}" type="text/javascript"></script>

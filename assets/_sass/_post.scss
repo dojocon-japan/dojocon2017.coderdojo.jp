@@ -1,10 +1,11 @@
 article.post{
-  font-family: $main-fontfamily;
+  font-family: $noto;
   max-width: $news-screen;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
   .post-cat{
+    font-family: $oswaldnoto;
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 20px;
@@ -19,11 +20,13 @@ article.post{
     }
   }
   .post-meta{
+    font-family: $oswaldnoto;
     text-align: center;
     margin-bottom: 40px;
   }
 
   h1{
+    font-family: $oswaldnoto;
     font-size: 28px;
     margin-top: 60px;
     margin-bottom: 20px;

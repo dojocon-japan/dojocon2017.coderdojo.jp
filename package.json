@@ -51,6 +51,7 @@
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.8",
     "imagemin-pngquant": "^5.0.0",
+    "jquery-match-height": "^0.7.2",
     "vinyl-named": "^1.1.0",
     "webpack-stream": "^3.2.0",
     "yargs": "^6.2.0"
