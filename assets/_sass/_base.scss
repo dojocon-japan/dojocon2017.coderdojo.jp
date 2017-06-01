@@ -22,6 +22,7 @@ a{
 }
 
 .button {
+  font-family: $oswaldnoto;
   border: 4px solid $_color-main;
   color: $_color-main;
   cursor: pointer;
@@ -70,7 +71,10 @@ a{
 }
 
 .main{
-  font-family: $main-fontfamily;
+  font-family: $noto;
+  h1,h2,h3,h4,h5,h6{
+    font-family: $oswaldnoto;
+  }
   h2{
     margin-top: 65px;
     margin-bottom: 45px;
