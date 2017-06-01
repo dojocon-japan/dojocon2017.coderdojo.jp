@@ -1,6 +1,7 @@
 'use strict';
 var $ = require('jquery');
 var scrollsmoothly = require('./scrollsmoothly.js');
+var matchHeight = require('jquery-match-height');
 var xlScreen = 768;
 
 $(function(){
@@ -44,4 +45,10 @@ $(function(){
       $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white');
     });
   }
+
+  /**
+   * staff
+   */
+  $('.js-staff-members li').matchHeight();
+
 });
