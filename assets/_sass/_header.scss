@@ -106,7 +106,7 @@
           background: #fff;
           padding: 13px 1em;
           color: $_color-main;
-
+          text-decoration: none;
           @include media($s-screen) {
             padding: 21px 0;
           }
@@ -189,6 +189,7 @@
     font-size: 20px;
     a{
       color: $_color-main;
+      text-decoration: none;
       &:hover,
       &:focus,
       &:active{

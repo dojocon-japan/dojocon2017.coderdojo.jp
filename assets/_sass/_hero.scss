@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 100vh;
     max-height: 800px;
-    background: $_color-gray url(../images/hero_bg.png) center center;
+    background: $_color-gray url(../images/hero-bg.png) center center;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -14,6 +14,7 @@
 
     a{
       color: #fff;
+      text-decoration: none;
       &:hover,
       &:focus,
       &:active{
@@ -58,6 +59,7 @@
       line-height: 1;
       font-size: 32px;
       a{
+        text-decoration: none;
         &:hover,
         &:focus,
         &:active{
@@ -144,6 +146,7 @@
           font-weight: $bold;
           font-size: 20px;
           text-shadow: 0 0 6px rgba(#000, .6);
+          text-decoration: none;
           @include media($s-screen) {
             font-size: 28px;
           }
