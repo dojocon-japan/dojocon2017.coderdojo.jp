@@ -51,4 +51,25 @@ $(function(){
    */
   $('.js-staff-members li').matchHeight();
 
+  /**
+   * Google Maps
+   * @require Google Maps API
+   */
+  if ( document.getElementById('map') != null ) {
+    google.maps.event.addDomListener(window, 'load', function (){
+      var latlng = new google.maps.LatLng(34.809931, 135.562625);
+      var options = {
+        zoom: 17,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false,
+        // draggable: false,
+      };
+      var map = new google.maps.Map(document.getElementById('map'), options);
+      var marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+      });
+    });
+  }
 });

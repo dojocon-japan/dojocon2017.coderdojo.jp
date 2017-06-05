@@ -24,7 +24,14 @@ article.post{
     text-align: center;
     margin-bottom: 40px;
   }
-
+  .post-thumbnail{
+    margin-bottom: 40px;
+    img{
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
   h1{
     font-family: $oswaldnoto;
     font-size: 28px;
@@ -32,21 +39,5 @@ article.post{
     margin-bottom: 20px;
     text-align: center;
     font-weight: bold;
-  }
-  h2{
-    font-size: 24px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  p{
-    font-size: 16px;
-    margin-bottom: 30px;
-    line-height: 2;
-  }
-  img{
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
   }
 }
