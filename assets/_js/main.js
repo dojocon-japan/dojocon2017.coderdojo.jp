@@ -60,7 +60,7 @@ $(function(){
   var $logo = $('.js-dojocon-logo');
   if( $hero.length ) {
     var logoWidth = $logo.width();
-    $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white').delay(10).queue(function(next) {
+    $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white').delay(500).queue(function(next) {
       $hero.addClass('is-visible');
       next();
     });
@@ -78,7 +78,7 @@ $(function(){
    */
    var $staff = $('.js-staff-members li');
   if( $staff.length ) {
-    $staff.matchHeight().delay(10).queue(function(next) {
+    $staff.matchHeight().delay(500).queue(function(next) {
       $('.js-staff-members').addClass('is-visible');
       next();
     });
