@@ -11,7 +11,11 @@
     align-items: center;
     flex-direction: column;
     color: #fff;
-
+    opacity: 0;
+    transition: opacity .2s;
+    &.is-visible{
+      opacity: 1;
+    }
     a{
       color: #fff;
       text-decoration: none;
@@ -83,6 +87,9 @@
       font-size: 20px;
       transition-property: border-color;
       transition-duration: .1s;
+      span{
+        margin-right: 1em;
+      }
       &.is-border-white{
         border-color: #fff;
       }

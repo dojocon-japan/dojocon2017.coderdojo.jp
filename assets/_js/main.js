@@ -4,7 +4,26 @@ var scrollsmoothly = require('./scrollsmoothly.js');
 var matchHeight = require('jquery-match-height');
 var xlScreen = 768;
 
+function getBackgroundImageByCSS(fileRegExp, selectorRegExp) {
+  var results = [];
+  var sheets = document.styleSheets;
+  for(var i = 0; i < sheets.length; i++) {
+    if(String(sheets[i].href).match(fileRegExp)){
+      var rules = sheets[i].cssRules;
+      for(var j = 0; j < rules.length; j++) {
+        var url = rules[j].style['background-image'].match(/^url\("(.+?)"\)$/);
+        if(rules[j].selectorText.match(selectorRegExp) && url) {
+          results.push(url[1])
+        }
+      }
+    }
+  }
+  return results;
+}
+
+
 $(function(){
+
   /**
    * Global menu on mobiles and tablets
    */
@@ -37,11 +56,19 @@ $(function(){
   /**
    * hero
    */
-
+  var $hero = $('.js-hero');
   var $logo = $('.js-dojocon-logo');
+  if( $hero.length ) {
+    var logoWidth = $logo.width();
+    $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white').delay(10).queue(function(next) {
+      $hero.addClass('is-visible');
+      next();
+    });
+  }
+
   if( $logo.length ) {
-    $(window).on('load resize',function() {
-      var logoWidth = $logo.width();
+    $(window).on('resize',function() {
+      logoWidth = $logo.width();
       $('.js-dojocon-copy').css('width',logoWidth + 'px').addClass('is-border-white');
     });
   }
@@ -49,7 +76,13 @@ $(function(){
   /**
    * staff
    */
-  $('.js-staff-members li').matchHeight();
+   var $staff = $('.js-staff-members li');
+  if( $staff.length ) {
+    $staff.matchHeight().delay(10).queue(function(next) {
+      $('.js-staff-members').addClass('is-visible');
+      next();
+    });
+  }
 
   /**
    * Google Maps

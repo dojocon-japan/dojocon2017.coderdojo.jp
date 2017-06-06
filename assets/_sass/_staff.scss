@@ -3,6 +3,11 @@
   padding-bottom: 50px;
   background-color: $_color-gray;
   .staff-members{
+    opacity: 0;
+    transition: opacity .2s;
+    &.is-visible{
+      opacity: 1;
+    }
     >li{;
       float: left;
       display: block;
