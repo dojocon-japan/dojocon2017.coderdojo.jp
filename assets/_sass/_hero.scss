@@ -49,9 +49,10 @@
       margin-bottom: 40px;
       img{
         width: 120px;
-        height: auto;
+        height: 34px;
         @include media(min-width $s-screen) {
           width: 170px;
+          height: 48px;
         }
       }
     }
