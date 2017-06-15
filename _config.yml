@@ -49,3 +49,4 @@ compress_html:
   # blanklines: true
   # profile: true
   startings: [html, head, body]
+url: http://dojocon2017.coderdojo.jp
