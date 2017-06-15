@@ -1,5 +1,6 @@
 'use strict';
-var $ = require('jquery');
+var jQuery = require('jquery');
+var $ = jQuery;
 var scrollsmoothly = require('./scrollsmoothly.js');
 var matchHeight = require('jquery-match-height');
 var xlScreen = 768;
