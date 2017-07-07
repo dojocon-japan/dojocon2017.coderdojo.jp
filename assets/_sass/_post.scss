@@ -40,4 +40,34 @@ article.post{
     text-align: center;
     font-weight: bold;
   }
+
+  $article-layout-grid: (
+    columns: 1,
+    gutter: 2rem,
+  );
+
+  $article-layout-grid--tablet-up: (
+    columns: 2,
+    gutter: 2rem,
+    media: "(min-width: 768px)",
+  );
+
+  .profilearea{
+    @include outer-container;
+    margin-bottom: 70px;
+    .col-left{
+      margin-bottom: 20px;
+      @include media($s-screen) {
+        @include span-columns(5);
+        @include omega(2n);
+      }
+    }
+    .col-right{
+      margin-bottom: 20px;
+      @include media($s-screen) {
+        @include span-columns(7);
+        @include omega(2n);
+      }
+    }
+  }
 }
