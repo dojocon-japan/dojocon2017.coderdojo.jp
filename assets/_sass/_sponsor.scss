@@ -29,10 +29,13 @@
         max-width: 100%;
         height: auto;
         &.sponsor-logo-silver-bmp{
-          max-width: 300px;
+          max-width: 270px;
         }
         &.sponsor-logo-bronze-bmp{
           max-width: 200px;
+          &-tam{
+            max-width: 140px;
+          }
         }
       }
       &:hover{
