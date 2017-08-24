@@ -6,16 +6,15 @@ var matchHeight = require('jquery-match-height');
 var xlScreen = 768;
 
 var url =  window.location.href;
-var switchAnchor = ['#sponsor','#supporter'];
+var switchAnchor = '#sponsor';
 var domainArray = ['http://localhost:4000/','https://dojocon-japan.github.io/dojocon2017teaser/','http://dojocon2017.coderdojo.jp/'];
-if( url.substr(url.length - switchAnchor[0].length, switchAnchor[0].length)  === switchAnchor[0] ){
+if( url.substr(url.length - switchAnchor.length, switchAnchor.length)  === switchAnchor ){
   for( var i = 0; i < domainArray.length; i++){
     if(url.indexOf(domainArray[i]) === 0){
-      window.location.href = domainArray[i] + switchAnchor[1] ;
+      window.location.href = domainArray[i];
     }
   }
 }
-
 
 function getBackgroundImageByCSS(fileRegExp, selectorRegExp) {
   var results = [];
