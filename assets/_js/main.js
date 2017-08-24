@@ -5,6 +5,18 @@ var scrollsmoothly = require('./scrollsmoothly.js');
 var matchHeight = require('jquery-match-height');
 var xlScreen = 768;
 
+var url =  window.location.href;
+var switchAnchor = ['#sponsor','#supporter'];
+var domainArray = ['http://localhost:4000/','https://dojocon-japan.github.io/dojocon2017teaser/','http://dojocon2017.coderdojo.jp/'];
+if( url.substr(url.length - switchAnchor[0].length, switchAnchor[0].length)  === switchAnchor[0] ){
+  for( var i = 0; i < domainArray.length; i++){
+    if(url.indexOf(domainArray[i]) === 0){
+      window.location.href = domainArray[i] + switchAnchor[1] ;
+    }
+  }
+}
+
+
 function getBackgroundImageByCSS(fileRegExp, selectorRegExp) {
   var results = [];
   var sheets = document.styleSheets;
