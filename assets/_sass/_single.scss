@@ -99,4 +99,19 @@
   td {
     background: $_color-gray;
   }
+  table{
+    ul,
+    ol{
+      &:last-child{
+        margin-bottom: 5px;
+      }
+      li{
+        margin-bottom: 5px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
 }
