@@ -82,7 +82,7 @@
       border: 1px solid transparent;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       line-height: 1;
       font-family: $oswald;
       font-size: 20px;
@@ -99,7 +99,7 @@
       }
     }
     .dojocon-date {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       .date{
         vertical-align: middle;
         font-weight: bold;
@@ -110,6 +110,9 @@
           font-size: 40px;
         }
       }
+      .time{
+        font-family: $oswald;
+      }
       .weekday{
         vertical-align: middle;
         font-family: $noto;
@@ -119,6 +122,12 @@
         @include media($s-screen) {
           font-size: 30px;
         }
+      }
+    }
+    .dojocon-time {
+      margin-bottom: 25px;
+      .time{
+        font-family: $oswald;
       }
     }
     .dojocon-info {
