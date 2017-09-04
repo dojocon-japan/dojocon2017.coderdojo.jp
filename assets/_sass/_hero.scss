@@ -110,9 +110,6 @@
           font-size: 40px;
         }
       }
-      .time{
-        font-family: $oswald;
-      }
       .weekday{
         vertical-align: middle;
         font-family: $noto;
@@ -126,6 +123,7 @@
     }
     .dojocon-time {
       margin-bottom: 25px;
+      font-family: $noto;
       .time{
         font-family: $oswald;
       }
