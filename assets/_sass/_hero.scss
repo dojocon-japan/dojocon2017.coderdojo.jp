@@ -82,7 +82,7 @@
       border: 1px solid transparent;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       line-height: 1;
       font-family: $oswald;
       font-size: 20px;
@@ -99,7 +99,7 @@
       }
     }
     .dojocon-date {
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       .date{
         vertical-align: middle;
         font-weight: bold;
@@ -119,6 +119,16 @@
         @include media($s-screen) {
           font-size: 30px;
         }
+      }
+    }
+    .dojocon-time {
+      margin-bottom: 30px;
+      font-family: $noto;
+      font-size: 20px;
+      letter-spacing: 1px;
+      font-weight: normal;
+      .time{
+        font-family: $oswald;
       }
     }
     .dojocon-info {
