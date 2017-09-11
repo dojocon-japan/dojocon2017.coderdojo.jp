@@ -70,4 +70,17 @@ article.post{
       }
     }
   }
+  .post-mb40{
+    margin-bottom: 40px;
+  }
+  .post-googleform{
+    width: 100%;
+    overflow:auto;
+    -webkit-overflow-scrolling:touch;
+    iframe{
+      width:100%;
+      border:none;
+      display:block;
+    }
+  }
 }
