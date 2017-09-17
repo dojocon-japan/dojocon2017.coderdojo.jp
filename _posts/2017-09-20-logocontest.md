@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CoderDojoロゴコンテスト・参加Dojoを募集します！
+title: CoderDojoロゴコンテスト・参加Dojo募集！
 date: 2017-09-18
 thumbnail: /assets/images/news-thumbnail-2017-09-20.png
 excerpt: 地域CoderDojoのロゴコンテストを開催します。コンテストに参加されるDojoを募集します。
 ---
 
-各地域のCoderDojoのロゴコンテストへの参加Dojoを募集します。
+各地域のCoderDojoのロゴコンテストへ参加されるDojoを募集します。
 
 <div class="text-center mb-30">
 <img src="{{ '/' | prepend: site.baseurl }}assets/images/news-logocontest-2017-09-20.jpg" alt="CoderDojoロゴ" class="img-responsive">
