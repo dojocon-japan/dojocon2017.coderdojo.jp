@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 「うちのDojoのココがすごいぞ自慢大会！」の自慢を大募集します！！
-date: 2017-09-20
+date: 2017-09-21
 thumbnail: /assets/images/news-thumbnail-2017-09-20.jpg
 excerpt: 「みんなに知ってほしい！」「おもしろいからマネしてほしい！」「とにかく聞いてほしい！」という「ウチのDojoのココがすごいんだ！」というDojo自慢を日本全国から大募集します！
 ---
